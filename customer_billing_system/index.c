@@ -79,7 +79,7 @@
  }
 
 
-   void input()
+   void input() //function to accept input for all variables
 	{
 	  FILE *fp=fopen("bidur.dat","rb");
 	  fseek (fp,0,SEEK_END);
@@ -109,7 +109,7 @@
 	  return;
    }
 
-   void writefile()
+   void writefile() //function to update the file storage
    {
 	  FILE *fp;
 	  fp=fopen("bidur.dat","ab");
@@ -118,7 +118,7 @@
 	  return;
    }
 
-   void search()
+   void search() //function to search for a specific variable
    {
 	 char ch;
 	 char nam[100];
@@ -185,7 +185,7 @@
 
 
 
-   void output()
+   void output() //print output
 	 {
 	   printf("\n\n    Customer no    :%d\n",customer.number);
 	   printf("    Name 	   :%s\n",customer.name);
